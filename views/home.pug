@@ -1,0 +1,19 @@
+div(class="container")
+  //- data from route 
+  h2 #{title}
+  //- data from js controller 
+  p {{ description }}
+
+  div(ng-controller="user_controller")
+    table(class="table")
+      thead 
+        tr
+          th Firstname
+          th Lasttname
+          th Country
+      tbody
+        //- data from js controller 
+        tr(ng-repeat="user in users")
+          td {{ user.firstname }}
+          td {{ user.lastname }}
+          td {{ user.county }}

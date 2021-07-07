@@ -1,0 +1,13 @@
+doctype html
+html(ng-app="myApp")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js')
+    script(src='/javascripts/app.js')
+  body
+    include ./navbar/web.pug
+    block content
+    include ./footer/web.pug
